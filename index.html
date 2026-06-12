@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahu Designing Hub Flex Printing & Advertising</title>
+  <meta name="description" content="Sahu Designing Hub Flex Printing & Advertising - premium printing, designing, flex, neon board, vinyl, visiting cards, sunboard, wedding cards and branding in Charkhi Dadri." />
+  <style>
+    :root {
+      --bg: #070b18;
+      --bg-soft: #111832;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-strong: rgba(255, 255, 255, 0.13);
+      --text: #ffffff;
+      --muted: #bac4dd;
+      --brand: #36d1ff;
+      --brand-2: #7c3cff;
+      --gold: #ffd166;
+      --danger: #ff4d6d;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(54, 209, 255, 0.22), transparent 28%),
+        radial-gradient(circle at 90% 8%, rgba(124, 60, 255, 0.24), transparent 30%),
+        radial-gradient(circle at 60% 85%, rgba(255, 209, 102, 0.12), transparent 35%),
+        var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max));
+      margin-inline: auto;
+    }
+
+    .top-bar {
+      background: linear-gradient(90deg, rgba(54, 209, 255, 0.16), rgba(124, 60, 255, 0.16));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--muted);
+      font-size: 14px;
+      padding: 9px 0;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 11, 24, 0.78);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+    }
+
+    .logo-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 12px 35px rgba(54, 209, 255, 0.28);
+      color: white;
+      font-size: 18px;
+      font-weight: 950;
+    }
+
+    .logo small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 14px;
+      width: 46px;
+      height: 46px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-weight: 850;
+      letter-spacing: 0.2px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: 0 16px 38px rgba(54, 209, 255, 0.22);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+    }
+
+    .hero {
+      padding: 86px 0 54px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: center;
+      gap: 46px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .badge span {
+      color: var(--gold);
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -3.5px;
+      margin-bottom: 22px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #fff, var(--brand), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+      max-width: 640px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 650px;
+    }
+
+    .stat {
+      padding: 17px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.075);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .showcase-card {
+      position: relative;
+      min-height: 540px;
+      border-radius: 34px;
+      padding: 22px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .showcase-card::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background: conic-gradient(from 180deg, transparent, rgba(54, 209, 255, 0.2), rgba(124, 60, 255, 0.25), transparent 60%);
+      animation: spin 10s linear infinite;
+      opacity: 0.75;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .mockup {
+      position: relative;
+      height: 100%;
+      min-height: 496px;
+      border-radius: 26px;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg, rgba(7, 11, 24, 0.2), rgba(7, 11, 24, 0.8)),
+        radial-gradient(circle at 30% 20%, rgba(54, 209, 255, 0.5), transparent 28%),
+        radial-gradient(circle at 80% 35%, rgba(255, 209, 102, 0.34), transparent 24%),
+        #151d3a;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mockup-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .pill {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .print-preview {
+      margin: 26px auto;
+      width: min(100%, 380px);
+      aspect-ratio: 4 / 5;
+      border-radius: 22px;
+      padding: 22px;
+      background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.94), rgba(230, 244, 255, 0.88)),
+        white;
+      color: #0b1120;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+      transform: rotate(-2deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .print-preview .label {
+      display: inline-block;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #111832;
+      color: white;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .print-preview h2 {
+      font-size: clamp(34px, 5vw, 50px);
+      line-height: 0.92;
+      letter-spacing: -2px;
+      margin: 16px 0;
+    }
+
+    .print-preview p {
+      color: #3f4964;
+      font-weight: 750;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .color-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .color-dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.7);
+    }
+
+    .dot-1 { background: var(--brand); }
+    .dot-2 { background: var(--brand-2); }
+    .dot-3 { background: var(--gold); }
+    .dot-4 { background: var(--danger); }
+
+    .floating-card {
+      position: absolute;
+      left: 12px;
+      bottom: 28px;
+      width: 210px;
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(7, 11, 24, 0.78);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: var(--shadow);
+    }
+
+    .floating-card strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .floating-card span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 34px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1;
+      letter-spacing: -2px;
+      max-width: 700px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 420px;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service-card, .portfolio-card, .price-card, .contact-card, .step-card {
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 24px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover, .portfolio-card:hover, .price-card:hover, .step-card:hover {
+      transform: translateY(-6px);
+      background: var(--card-strong);
+      border-color: rgba(54, 209, 255, 0.28);
+    }
+
+    .icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(54, 209, 255, 0.18), rgba(124, 60, 255, 0.2));
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3, .step-card h3, .price-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .service-card p, .step-card p, .price-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: 1.1fr 0.9fr 1fr;
+      grid-auto-rows: 230px;
+    }
+
+    .portfolio-card {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+      min-height: 230px;
+    }
+
+    .portfolio-card.large {
+      grid-row: span 2;
+    }
+
+    .portfolio-art {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(140deg, rgba(0,0,0,0.05), rgba(0,0,0,0.74)),
+        radial-gradient(circle at 15% 20%, rgba(54, 209, 255, 0.7), transparent 28%),
+        radial-gradient(circle at 80% 25%, rgba(255, 209, 102, 0.6), transparent 20%),
+        radial-gradient(circle at 60% 80%, rgba(124, 60, 255, 0.65), transparent 28%);
+    }
+
+    .portfolio-art.alt {
+      background:
+        linear-gradient(140deg, rgba(0,0,0,0.04), rgba(0,0,0,0.74)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0 8px, transparent 8px 18px),
+        radial-gradient(circle at 70% 20%, rgba(255, 77, 109, 0.68), transparent 25%),
+        radial-gradient(circle at 25% 80%, rgba(54, 209, 255, 0.7), transparent 35%),
+        #151d3a;
+    }
+
+    .portfolio-info {
+      position: absolute;
+      inset: auto 18px 18px 18px;
+      z-index: 2;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(7, 11, 24, 0.68);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .portfolio-info h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-info p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .steps-grid {
+      grid-template-columns: repeat(4, 1fr);
+      counter-reset: steps;
+    }
+
+    .step-card {
+      position: relative;
+      min-height: 230px;
+    }
+
+    .step-card::before {
+      counter-increment: steps;
+      content: "0" counter(steps);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--gold);
+      font-weight: 950;
+      margin-bottom: 24px;
+    }
+
+    .pricing-grid {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: stretch;
+    }
+
+    .price-card.featured {
+      background: linear-gradient(160deg, rgba(54, 209, 255, 0.16), rgba(124, 60, 255, 0.16));
+      border-color: rgba(54, 209, 255, 0.35);
+      transform: translateY(-10px);
+    }
+
+    .price {
+      margin: 18px 0;
+      font-size: 38px;
+      font-weight: 950;
+      letter-spacing: -1px;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .features {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin: 22px 0 26px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .features li::before {
+      content: "✓";
+      color: var(--brand);
+      font-weight: 950;
+      margin-right: 10px;
+    }
+
+    .cta {
+      padding: 38px;
+      border-radius: 34px;
+      background:
+        linear-gradient(135deg, rgba(54, 209, 255, 0.18), rgba(124, 60, 255, 0.18)),
+        rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 5vw, 54px);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: stretch;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-item b {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .contact-item span, .contact-item a {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      padding: 15px 16px;
+      border-radius: 16px;
+      outline: none;
+      font: inherit;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: rgba(186, 196, 221, 0.7);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    footer {
+      padding: 34px 0;
+      color: var(--muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(0, 0, 0, 0.18);
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .socials a {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .contact-grid,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: grid;
+        place-items: center;
+      }
+
+      nav {
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        top: 92px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px;
+        border-radius: 22px;
+        background: rgba(7, 11, 24, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: var(--shadow);
+        transform: translateY(-18px);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.25s ease;
+      }
+
+      nav.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      nav a {
+        padding: 14px 16px;
+      }
+
+      h1 {
+        letter-spacing: -2.2px;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .stats,
+      .services-grid,
+      .steps-grid,
+      .portfolio-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-card.large {
+        grid-row: span 1;
+      }
+
+      .showcase-card {
+        min-height: 470px;
+        padding: 14px;
+        border-radius: 26px;
+      }
+
+      .mockup {
+        min-height: 440px;
+        padding: 18px;
+      }
+
+      .floating-card {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 12px;
+      }
+
+      .cta {
+        padding: 24px;
+        border-radius: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <span>Premium Designing & Printing Studio</span>
+      <span>Call : <a href="tel:+919053385377">9053385377</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" aria-label="Sahu Designing Hub Home">
+        <span class="logo-mark">SH</span>
+        <span>Sahu Designing Hub <small>Flex Printing & Advertising</small></span>
+      </a>
+
+      <nav id="navMenu" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="badge"><span>✦</span> Business ko premium look do</div>
+          <h1>Designing aur printing ka <span class="gradient-text">complete solution</span></h1>
+          <p>Flex, neon board, vinyl, visiting card, sunboard, wedding card, ID card, momento aur har type ki branding ke liye clean, modern aur print-ready design.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/919053385377?text=Hello%20Sahu Designing Hub%2C%20mujhe%20designing%20%26%20printing%20ka%20kaam%20karwana%20hai." target="_blank" rel="noopener">WhatsApp Now</a>
+            <a class="btn btn-secondary" href="#portfolio">Read More</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>HD</strong><span>Print Quality</span></div>
+            <div class="stat"><strong>Fast</strong><span>Design Delivery</span></div>
+            <div class="stat"><strong>All</strong><span>Branding Items</span></div>
+          </div>
+        </div>
+
+        <div class="showcase-card reveal" aria-label="Design preview">
+          <div class="mockup">
+            <div class="mockup-top">
+              <span class="pill">Premium Poster</span>
+              <span class="pill">CMYK Ready</span>
+            </div>
+
+            <div class="print-preview">
+              <div>
+                <span class="label">Sahu Designing Hub DESIGN</span>
+                <h2>MAKE YOUR BRAND LOOK PREMIUM</h2>
+                <p>Creative posters, flex banners, boards, cards and social media designs with professional finishing.</p>
+              </div>
+              <div class="color-row" aria-hidden="true">
+                <span class="color-dot dot-1"></span>
+                <span class="color-dot dot-2"></span>
+                <span class="color-dot dot-3"></span>
+                <span class="color-dot dot-4"></span>
+              </div>
+            </div>
+
+            <div class="floating-card">
+              <strong>Today Offer</strong>
+              <span>Business poster + print-ready file combo available.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Har business ke liye smart design services</h2>
+          <p>Jo design screen par premium lage aur print me bhi sharp nikle — same focus, same quality.</p>
+        </div>
+
+        <div class="grid services-grid">
+          <article class="service-card reveal">
+            <div class="icon">🖨️</div>
+            <h3>Flex & Banner</h3>
+            <p>Shop board, event banner, election poster, hoarding aur big-size flex designs.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">💡</div>
+            <h3>Neon & Sign Board</h3>
+            <p>Premium signage concepts, LED board layout aur brand-friendly front design.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">🪪</div>
+            <h3>Cards & ID</h3>
+            <p>Visiting cards, ID cards, letterhead, bill book aur office stationery design.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">🎁</div>
+            <h3>Gift & Branding</h3>
+            <p>Momentos, bottle printing, stickers, vinyl, sunboard and custom branding.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">📱</div>
+            <h3>Social Media Posts</h3>
+            <p>Instagram, Facebook, reels cover, offer poster aur viral style creatives.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">💍</div>
+            <h3>Wedding Cards</h3>
+            <p>Modern invitation cards, digital invite and premium family function designs.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">🏪</div>
+            <h3>Shop Branding</h3>
+            <p>Complete shop look: front board, menu, wall graphics, poster and display.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">✨</div>
+            <h3>Logo & Identity</h3>
+            <p>Simple, memorable and print-ready logo design for new and existing brands.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Portfolio style preview</h2>
+          <p>Yahan apne real designs ke screenshots/images later replace kar sakte ho.</p>
+        </div>
+
+        <div class="grid portfolio-grid">
+          <article class="portfolio-card large reveal">
+            <div class="portfolio-art"></div>
+            <div class="portfolio-info">
+              <h3>Business Poster</h3>
+              <p>Instagram ready square creative with bold headline.</p>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-art alt"></div>
+            <div class="portfolio-info">
+              <h3>Shop Board</h3>
+              <p>High visibility front board layout.</p>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-art"></div>
+            <div class="portfolio-info">
+              <h3>Visiting Card</h3>
+              <p>Premium card design with clean typography.</p>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-art alt"></div>
+            <div class="portfolio-info">
+              <h3>Flex Banner</h3>
+              <p>Big-size print layout with sharp details.</p>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-art"></div>
+            <div class="portfolio-info">
+              <h3>Product Branding</h3>
+              <p>Labels, stickers, packaging and vinyl work.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Simple process, fast result</h2>
+          <p>Clear brief se lekar final print-ready file tak kaam professional flow me hota hai.</p>
+        </div>
+
+        <div class="grid steps-grid">
+          <article class="step-card reveal">
+            <h3>Requirement</h3>
+            <p>Size, matter, logo, photo, color and style final karte hain.</p>
+          </article>
+          <article class="step-card reveal">
+            <h3>Creative Design</h3>
+            <p>Modern layout, readable text and premium color combination banate hain.</p>
+          </article>
+          <article class="step-card reveal">
+            <h3>Proof & Changes</h3>
+            <p>Preview share karke spelling, number, address aur layout check karte hain.</p>
+          </article>
+          <article class="step-card reveal">
+            <h3>Print Ready</h3>
+            <p>Final HD file, PDF/JPG/PNG as per requirement deliver hoti hai.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Website packages</h2>
+          <p>Rates ko apne hisaab se edit kar sakte ho. Ye section client ko clear option dikhata hai.</p>
+        </div>
+
+        <div class="grid pricing-grid">
+          <article class="price-card reveal">
+            <h3>Starter</h3>
+            <p>Basic one-page business website.</p>
+            <div class="price">₹4,999 <small>onwards</small></div>
+            <ul class="features">
+              <li>Responsive design</li>
+              <li>Hero + services + contact</li>
+              <li>WhatsApp button</li>
+              <li>Basic SEO setup</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Enquiry</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <h3>Premium</h3>
+            <p>Best for shop, studio and local business.</p>
+            <div class="price">₹9,999 <small>onwards</small></div>
+            <ul class="features">
+              <li>Modern landing page</li>
+              <li>Portfolio/gallery section</li>
+              <li>Lead form + WhatsApp</li>
+              <li>Speed & mobile optimized</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Most Popular</a>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>Brand Pro</h3>
+            <p>For complete online presence.</p>
+            <div class="price">Custom <small>quote</small></div>
+            <ul class="features">
+              <li>Multiple pages</li>
+              <li>Gallery / catalog</li>
+              <li>Domain & hosting help</li>
+              <li>Advanced brand look</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Discuss</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2>Apne business ko premium look dena hai?</h2>
+            <p>Designing, printing ya website — Sahu Designing Hub ke saath professional presentation start karo.</p>
+          </div>
+          <a class="btn btn-primary" href="tel:+919053385377">Call Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact Sahu Designing Hub</h2>
+          <p>Project details bhejo, hum aapko design/printing ke liye best suggestion denge.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="icon">📍</span>
+                <div>
+                  <b>Location</b>
+                  <span>Charkhi Dadri</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                  <b>Phone</b>
+                  <a href="tel:+919053385377">9053385377</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="icon">💬</span>
+                <div>
+                  <b>WhatsApp</b>
+                  <a href="https://wa.me/919053385377" target="_blank" rel="noopener">Message on WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <form id="leadForm">
+              <div class="form-row">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="tel" id="phone" placeholder="Mobile Number" required />
+              </div>
+              <select id="service" required>
+                <option value="">Select Service</option>
+                <option>Flex / Banner</option>
+                <option>Logo Design</option>
+                <option>Website Design</option>
+                <option>Visiting Card / ID Card</option>
+                <option>Neon / Sign Board</option>
+                <option>Social Media Poster</option>
+              </select>
+              <textarea id="message" placeholder="Project detail likho..." required></textarea>
+              <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Sahu Designing Hub Flex Printing & Advertising. All rights reserved.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="tel:+919053385377" aria-label="Call">☎</a>
+        <a href="https://wa.me/919053385377" target="_blank" rel="noopener" aria-label="WhatsApp">☘</a>
+        <a href="#home" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      menuBtn.textContent = navMenu.classList.contains('open') ? '×' : '☰';
+    });
+
+    navMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        menuBtn.textContent = '☰';
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    document.getElementById('leadForm').addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value.trim();
+
+      const text = `Hello Sahu Designing Hub,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0ADetail: ${encodeURIComponent(message)}`;
+      window.open(`https://wa.me/919053385377?text=${text}`, '_blank');
+    });
+  </script>
+</body>
+</html>
